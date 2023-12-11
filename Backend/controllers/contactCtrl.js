@@ -21,7 +21,8 @@ module.exports.editContact = async (req, res) => {
 }
 
 module.exports.deleteContact = async (req, res) => {
-    const { _id} = req.body;
+    const { _id } = req.body;
+    console.log(req.body)
     Contact
         .findByIdAndDelete(_id)
         .then(() => res.send("deleted successfully..."))

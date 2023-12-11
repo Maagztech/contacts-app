@@ -5,6 +5,6 @@ const router = express.Router();
 router.get("/", getContacts);
 router.post("/save", saveContacts);
 router.patch("/edit", editContact);
-router.delete("/delete", deleteContact);
+router.post("/delete", deleteContact);
 
 module.exports = router;

@@ -69,3 +69,11 @@ input {
   cursor: pointer;
   font-size: 20px;
 }
+
+.name{
+  font-weight: bold;
+}
+
+.contact{
+  font-size:medium;
+}
