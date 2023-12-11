@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Contact from "./components/contact";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>Contacts</h1>
+        <div className='top'>
+          <input type='text' placeholder="Add name..." />
+          <input type='text' placeholder="Add contact Number..." />
+          <div className="add">Add</div>
+        </div>
+        <div className="list">
+          <Contact name="A" contact="B" />
+        </div>
+      </div>
     </div>
   );
 }
