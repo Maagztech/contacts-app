@@ -1,14 +1,14 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const contactSchema = new mongoose.Schema({
     name: {
         type: String,
-        require: true
+        required: true
     },
     contact: {
         type: Number,
-        require: true
+        required: true
     }
 })
 
-module.exports = mongoose.model('contactModel', contactSchema)
+module.exports = mongoose.model('contact', contactSchema);
